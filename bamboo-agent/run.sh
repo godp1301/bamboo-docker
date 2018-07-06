@@ -58,7 +58,7 @@ then
   if [ ${CHECK_AGENT_JAR}=="true" ]
   then
     echo "Found Bamboo Agent at ${AGENT_JAR}"
-    wget -c ${AGENT_JAR}
+    wget --no-check-certificate -c ${AGENT_JAR}
     if [ $? == "0" ]
     then
       if [ ! -z "${BAMBOO_CAPABILITIES}" ]
