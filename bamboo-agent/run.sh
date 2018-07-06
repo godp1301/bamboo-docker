@@ -48,7 +48,7 @@ then
     CONNECTION_STRING="http://${BAMBOO_SERVER}:${BAMBOO_SERVER_PORT}/agentServer/ -t ${BAMBOO_SECURITY_TOKEN}"
   fi
   echo "CONNECTION_STRING: "${CONNECTION_STRING}
-  AGENT_JAR="http://${BAMBOO_SERVER}:${BAMBOO_SERVER_PORT}/agentServer/agentInstaller/atlassian-bamboo-agent-installer-${AGENT_VERSION}.jar"
+  AGENT_JAR="https://${BAMBOO_SERVER}:${BAMBOO_SERVER_PORT}/agentServer/agentInstaller/atlassian-bamboo-agent-installer-${AGENT_VERSION}.jar"
   CHECK_AGENT_JAR=`validate_url $AGENT_JAR`
   echo "AGENT_JAR: "${AGENT_JAR}
   echo "###############################################"
